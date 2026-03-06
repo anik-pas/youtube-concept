@@ -403,12 +403,12 @@
               <h2 class="recommended-title">Recommended</h2>
               <div class="slider-buttons">
                 <!-- If we need navigation buttons -->
-                <div class="channel-button channel-button-prev">
+                <div class="channel-button" id="recommended-button-prev">
                   <svg class="icon icon-left" width="28" height="28">
                     <use xlink:href="img/icons.svg#left"></use>
                   </svg>
                 </div>
-                <div class="channel-button channel-button-next">
+                <div class="channel-button" id="recommended-button-next">
                   <svg class="icon icon-right" width="28" height="28">
                     <use xlink:href="img/icons.svg#right"></use>
                   </svg>
@@ -417,7 +417,7 @@
             </div>
           </div>
           <!-- Slider main container -->
-          <div class="swiper channel-slider">
+          <div class="swiper-container recommended-slider">
             <!-- Additional required wrapper -->
             <div class="swiper-wrapper">
               <!-- Slides -->
@@ -492,43 +492,37 @@
           <!-- /.swiper or swiper-container -->
         </div>
         <!-- ./channel -->
-        <div class="channel">
-          <div class="channel-header">
-            <div class="channel-title-wrapper">
-              <div class="channel-with-subscribe">
-                <a href="#" class="channel-title">
-                  <img
+
+        <div class="channel recommended-channel">
+          <a href="#" class="channel-title recommended-channel-title">
+            <img
                     src="img/Oval.png"
                     alt="Food & Drink"
                     class="channel-avatar"
-                  />
-                  <div>
-                    <span class="channel-heading">Food & Drink</span>
-                    <span class="channel-description"
-                      >Recommended channel for you</span
-                    >
-                  </div>
-                </a>
-                <button class="subscribe-button">Subscribe 2.3m</button>
-              </div>
-              <div class="slider-buttons">
-                <!-- If we need navigation buttons -->
-                <div class="channel-button channel-button-prev">
+            />      
+            <span class="channel-text">Food & Drink</span>
+            <span class="recommended-channel-subtitle"
+              >Recommended channel for you</span>
+          </a>
+          
+          <div class="slider-buttons">
+            <div class="channel-button" id="recommended-channel-button-prev">
                   <svg class="icon icon-left" width="28" height="28">
                     <use xlink:href="img/icons.svg#left"></use>
                   </svg>
-                </div>
-                <div class="channel-button channel-button-next">
+            </div>
+            <div class="channel-button" id="recommended-channel-button-next">
                   <svg class="icon icon-right" width="28" height="28">
                     <use xlink:href="img/icons.svg#right"></use>
                   </svg>
-                </div>
-              </div>
             </div>
           </div>
 
+          <button class="subscribe-button">Subscribe 2.3m</button>
+        </div>
+
           <!-- Slider main container -->
-          <div class="swiper channel-slider">
+          <div class="swiper-container recommended-channel-slider">
             <!-- Additional required wrapper -->
             <div class="swiper-wrapper">
               <!-- Slides -->
