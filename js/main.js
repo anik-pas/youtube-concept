@@ -1,7 +1,7 @@
 const myChannelSlider = new Swiper(".my-channel-slider", {
   // Optional parameters
   loop: true,
-  slidesPerView: 5,
+  slidesPerView: 6,
 
   // Navigation arrows
   navigation: {
@@ -13,7 +13,7 @@ const myChannelSlider = new Swiper(".my-channel-slider", {
 const recommendedSlider = new Swiper(".recommended-slider", {
   // Optional parameters
   loop: true,
-  slidesPerView: 2,
+  slidesPerView: 3,
 
   // Navigation arrows
   navigation: {
@@ -24,7 +24,7 @@ const recommendedSlider = new Swiper(".recommended-slider", {
 const recommendedChannelSlider = new Swiper(".recommended-channel-slider", {
   // Optional parameters
   loop: true,
-  slidesPerView: 5,
+  slidesPerView: 6,
 
   // Navigation arrows
   navigation: {
